@@ -51,9 +51,9 @@ def my_var_cut_fn(epochs, plow, phigh, to_plot=True):
 #%% Set parameters, directories and file names
 more_plots = True
 
-data_dir     = '/net/qnap/data/rd/ChildBrain/Simulation/NEW_25_seglabBEM6/'
+data_dir     = '/BeamComp_DataRepo/MEG/Simulated/'
 filename     = 'Simulated_evoked_10nAm_at_-54.0_35.5_32.5mm-ave_OVER_spont_eo_raw.fif'
-subjects_dir = '/net/qnap/data/rd/ChildBrain/FS_SUBS_DIR/subjects/'
+subjects_dir = '/BeamComp_DataRepo/MRI/'
 subject      = 'BeamCompMRI'
 transfile    = subjects_dir + subject + '/mri/brain-neuromag/sets/' + 'BeamCompMRI-amit-131118-MNEicp-trans.fif'
 mrifile      = subjects_dir + subject + '/mri/T1.mgz'
