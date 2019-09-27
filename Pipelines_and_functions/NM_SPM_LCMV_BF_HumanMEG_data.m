@@ -12,10 +12,10 @@
 clear all; clc
 restoredefaultpath
 restoredefaultpath
-spm_dir  = '/home/amit/git/ChildBrain/BeamComp/MATLAB/BeamComp_CodeRepo/spm12/';
-mri_dir  = '/net/qnap/data/rd/ChildBrain/BeamComp_DataRepo/MRI/SPM/';
-data_dir = '/net/qnap/data/rd/ChildBrain/BeamComp_DataRepo/';
-code_dir = '/home/amit/git/ChildBrain/BeamComp/MATLAB/BeamComp_CodeRepo/LCMV_pipelines/';
+spm_dir  = '/BeamComp_CodeRepo/spm12/';
+mri_dir  = '/BeamComp_DataRepo/MRI/SPM/';
+data_dir = '/BeamComp_DataRepo/';
+code_dir = '/BeamComp_CodeRepo/LCMV_pipelines/';
 addpath(spm_dir)
 spm('defaults', 'eeg');
 addpath(mri_dir)
