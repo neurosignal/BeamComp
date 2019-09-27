@@ -51,14 +51,14 @@ def my_var_cut_fn(epochs, plow, phigh, to_plot=True):
 #%% Set parameters, directories and file names
 more_plots = False
 
-data_dir     = '/net/qnap/data/rd/ChildBrain/neurodata//BeamComp_data_share/Aston_phantom_data/'
-filename     = 'Amp1000_IASoff/Amp1000_Dip9_IASoff.fif'
-subject      = 'Elekta_phantom'
-subjects_dir = '/net/qnap/data/rd/ChildBrain/FS_SUBS_DIR/subjects/'
+data_dir     = '/BeamComp_DataRepo/MEG/Phantom/'
+filename     = 'Static_phantom/Amp1000_IASoff/Amp1000_Dip9_IASoff.fif'
+subject      = 'TriuxPhantom'
+subjects_dir = '/BeamComp_DataRepo/MRI/'
 mrifile      = subjects_dir + subject + '/mri/T1.mgz'
 surffile     = subjects_dir + subject + '/bem/watershed/' + subject + '_outer_skin_surface'
 transfile    = subjects_dir + subject + '/mri/transforms/' + subject +'-trans2.fif'
-act_dip      = loadmat(subjects_dir + subject + '/Triux_phantom.mat') # TRIUX
+act_dip      = loadmat(subjects_dir + subject + '/triux_phantom_dipole_loc.mat') # TRIUX
 act_dip      = act_dip['biomag_phantom']
 
 #%% Read data > reject bad channels > pick only MEG channels
