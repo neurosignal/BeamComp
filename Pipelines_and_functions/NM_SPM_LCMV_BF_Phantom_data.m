@@ -87,7 +87,7 @@ for datacats={'Static_phantom', 'Moving_phantom'}
     par.actiwin      = [0.05 0.5];
     if isequal(datacat, 'Moving_phantom')
         par.stimraise = 3840;
-        par.Movephantom = 'yes';
+        par.Movephantom = 'yes'; 
     else
     end
 
